@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pasukan to the Koin | BAZNAS Kabupaten Sragen</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#f5f7f8;
+color:#333;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+.hero{
+padding:30px 0;
+}
+
+.hero img{
+width:100%;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.section{
+margin:40px 0;
+}
+
+.card{
+background:#fff;
+padding:30px;
+border-radius:18px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+h2{
+color:#009245;
+margin-bottom:20px;
+font-size:32px;
+}
+
+h3{
+color:#009245;
+margin-bottom:10px;
+}
+
+p{
+line-height:1.8;
+margin-bottom:15px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.benefit{
+background:#F8FFF9;
+border-left:6px solid #00A651;
+padding:20px;
+border-radius:12px;
+}
+
+.cta{
+background:linear-gradient(135deg,#00a651,#0d7d36);
+color:white;
+text-align:center;
+padding:40px;
+border-radius:20px;
+}
+
+.cta h2{
+color:white;
+}
+
+.btn{
+display:inline-block;
+margin:10px;
+padding:15px 30px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn-wa{
+background:#25D366;
+color:white;
+}
+
+.btn-qris{
+background:#FFD400;
+color:#000;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.bank{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px;
+background:#fafafa;
+border-radius:10px;
+margin-bottom:15px;
+border:1px solid #ddd;
+gap:15px;
+}
+
+.bank-info{
+flex:1;
+}
+
+.copyBtn{
+background:#009245;
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.copyBtn:hover{
+background:#007d3c;
+}
+
+.faq{
+margin-bottom:20px;
+}
+
+footer{
+margin-top:60px;
+background:#009245;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+
+/* Fitur tambahan Pasukan to the Koin */
+:root{--green:#009245;--green-dark:#08743b;--gold:#ffd400;--ink:#17352a}
+body{overflow-x:hidden}
+.hero{position:relative;padding:30px 0 15px}
+.hero-slider{position:relative;overflow:hidden;border-radius:22px;min-height:330px;background:linear-gradient(120deg,#006b38,#00a651 62%,#d6f5a5);box-shadow:0 15px 35px #003b2526}
+.hero-slide{display:none;min-height:330px;padding:48px 7%;align-items:center;justify-content:space-between;gap:24px;color:#fff;animation:slideIn .65s ease}
+.hero-slide.active{display:flex}
+.hero-copy{max-width:650px;position:relative;z-index:1}
+.hero-copy .eyebrow{display:inline-block;padding:7px 13px;border:1px solid #ffffff70;border-radius:30px;background:#ffffff18;font-size:12px;font-weight:700;letter-spacing:1px;margin-bottom:15px}
+.hero-copy h1{font-size:clamp(27px,4vw,48px);line-height:1.18;margin-bottom:15px}
+.hero-copy p{max-width:580px;color:#f1fff5}
+.hero-art{font-size:clamp(85px,13vw,155px);color:#fff9;filter:drop-shadow(0 12px 12px #00421f30);padding:15px}
+.slider-controls{position:absolute;bottom:16px;left:7%;display:flex;align-items:center;gap:9px;z-index:2}
+.slider-dot{width:9px;height:9px;border:0;border-radius:99px;background:#ffffff80;cursor:pointer;transition:.25s}.slider-dot.active{width:27px;background:#fff}
+.slider-arrow{position:absolute;top:50%;transform:translateY(-50%);border:1px solid #ffffff70;background:#ffffff25;color:white;width:40px;height:40px;border-radius:50%;cursor:pointer;z-index:3}.slider-arrow.prev{left:14px}.slider-arrow.next{right:14px}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.stat-card{background:#fff;border:1px solid #e4f2e8;border-radius:18px;padding:25px;text-align:center;box-shadow:0 8px 25px #123b1d0b}
+.stat-icon{width:54px;height:54px;margin:0 auto 12px;display:grid;place-items:center;border-radius:16px;background:#e8f8ed;color:var(--green);font-size:23px}
+.stat-number{font-size:clamp(25px,3vw,36px);font-weight:800;color:var(--green-dark);line-height:1.3}.stat-label{font-size:13px;color:#65736a}.live-note{font-size:11px;color:#718078;margin-top:8px}
+.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;position:relative}
+.timeline-step{position:relative;text-align:center;padding:20px 12px;background:#fff;border:1px solid #e4eee6;border-radius:16px;z-index:1}
+.timeline-step .step-icon{width:58px;height:58px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;background:#e9f8ed;color:var(--green);font-size:22px;border:3px solid #c7ebd2}
+.step-num{font-size:11px;letter-spacing:1px;color:#7a8a7e;font-weight:700}.timeline-step h3{font-size:15px;margin:8px 0}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gallery-item{position:relative;overflow:hidden;border-radius:16px;min-height:210px;background:#e4efe6}
+.gallery-item img{width:100%;height:245px;object-fit:cover;transition:transform .5s}.gallery-item:hover img{transform:scale(1.06)}
+.gallery-caption{position:absolute;bottom:0;left:0;right:0;padding:32px 16px 15px;color:#fff;background:linear-gradient(transparent,#10271de0);font-weight:600}
+.testimonial-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.testimonial{padding:25px;background:#fff;border:1px solid #e8eee9;border-radius:18px;box-shadow:0 8px 25px #123b1d0a}
+.quote-icon{font-size:25px;color:#b7dfc2;margin-bottom:12px}.person{display:flex;gap:12px;align-items:center;margin-top:16px}.avatar{width:45px;height:45px;border-radius:50%;display:grid;place-items:center;background:#e7f6eb;color:#008640;font-size:18px}.person small{display:block;color:#748078}
+.wa-float{position:fixed;right:22px;bottom:22px;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:white;font-size:30px;text-decoration:none;box-shadow:0 8px 25px #0003;z-index:1000;transition:.25s}.wa-float:hover{transform:translateY(-4px) scale(1.04)}
+.modal{position:fixed;inset:0;background:#061c11c9;display:none;align-items:center;justify-content:center;padding:20px;z-index:2000;backdrop-filter:blur(5px)}.modal.open{display:flex;animation:fadeIn .2s ease}.modal-panel{position:relative;background:white;border-radius:20px;padding:25px;width:min(100%,480px);text-align:center;box-shadow:0 20px 70px #0004}.modal-panel h2{font-size:25px;margin-bottom:8px}.modal-close{position:absolute;right:14px;top:12px;border:0;background:#edf4ef;color:#254333;width:36px;height:36px;border-radius:50%;font-size:20px;cursor:pointer}.qris-image{width:min(100%,340px);max-height:60vh;object-fit:contain;margin:18px auto;border:1px solid #e5e5e5;border-radius:12px;padding:10px;background:white}.modal-help{font-size:12px;color:#738078}
+.section-heading{text-align:center;max-width:760px;margin:0 auto 25px}.section-heading p{color:#6b7b70}
+@keyframes slideIn{from{opacity:.5;transform:translateX(15px)}to{opacity:1;transform:translateX(0)}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@media(max-width:768px){.hero-slide{min-height:370px;padding:35px 8%;}.hero-art{display:none}.hero-copy h1{font-size:30px}.stats-grid{grid-template-columns:1fr;gap:12px}.stat-card{padding:20px}.timeline{grid-template-columns:1fr;gap:10px}.timeline-step{display:grid;grid-template-columns:55px 1fr;align-items:center;text-align:left;column-gap:14px;padding:14px}.timeline-step .step-icon{grid-row:span 2;width:50px;height:50px;margin:0}.timeline-step h3{margin:3px 0}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-item{min-height:170px}.gallery-item img{height:190px}.testimonial-grid{grid-template-columns:1fr}.wa-float{width:54px;height:54px;right:15px;bottom:15px}}
+@media(max-width:460px){.gallery-grid{grid-template-columns:1fr}.hero-slide{min-height:390px}.slider-arrow{width:34px;height:34px}.hero-copy{padding-bottom:25px}}
+
+@media(max-width:768px){
+
+.bank{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.copyBtn{
+width:100%;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="hero" data-aos="fade-up">
+  <div class="hero-slider" id="heroSlider" aria-label="Banner kampanye Pasukan to the Koin">
+    <article class="hero-slide active">
+      <div class="hero-copy"><span class="eyebrow">BAZNAS KABUPATEN SRAGEN</span><h1>Kecil Nilainya,<br>Besar Manfaatnya.</h1><p>Jadikan recehan harian sebagai gerakan kebaikan untuk membantu sesama.</p><a class="btn btn-qris" href="#" onclick="openQris(event)"><i class="fa-solid fa-qrcode"></i> Scan QRIS</a></div><div class="hero-art"><i class="fa-solid fa-hand-holding-heart"></i></div>
+    </article>
+    <article class="hero-slide"><div class="hero-copy"><span class="eyebrow">GERAKAN INFAK HARIAN</span><h1>Satu Kaleng, Sejuta Harapan.</h1><p>Mulai dari rumah, kantor, dan lingkungan kita. Sedekah rutin, manfaat terus mengalir.</p><a class="btn btn-wa" href="https://wa.me/6285729436744" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Gabung Sekarang</a></div><div class="hero-art"><i class="fa-solid fa-piggy-bank"></i></div></article>
+    <article class="hero-slide"><div class="hero-copy"><span class="eyebrow">BERSAMA BAZNAS SRAGEN</span><h1>Receh Anda, Harapan Mereka.</h1><p>Infak yang terkumpul disalurkan untuk mendukung program kemanusiaan dan kesejahteraan mustahik.</p><a class="btn btn-qris" href="#alur"><i class="fa-solid fa-arrow-down"></i> Lihat Alur Program</a></div><div class="hero-art"><i class="fa-solid fa-people-carry-box"></i></div></article>
+    <button class="slider-arrow prev" aria-label="Banner sebelumnya" onclick="changeSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button><button class="slider-arrow next" aria-label="Banner berikutnya" onclick="changeSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="slider-controls"><button class="slider-dot active" aria-label="Banner 1" onclick="goSlide(0)"></button><button class="slider-dot" aria-label="Banner 2" onclick="goSlide(1)"></button><button class="slider-dot" aria-label="Banner 3" onclick="goSlide(2)"></button></div>
+  </div>
+</div>
+
+<section class="section" data-aos="fade-up"><div class="section-heading"><h2>Gerakan Kebaikan dalam Angka</h2><p>Angka program dapat disambungkan ke sumber data resmi agar selalu terbarui.</p></div>
+<div class="stats-grid">
+ <div class="stat-card"><div class="stat-icon"><i class="fa-solid fa-people-group"></i></div><div class="stat-number" id="countMembers" data-count="0">0</div><div class="stat-label">Anggota Pasukan to the Koin</div><div class="live-note"><i class="fa-solid fa-rotate"></i> Data program</div></div>
+ <div class="stat-card"><div class="stat-icon"><i class="fa-solid fa-coins"></i></div><div class="stat-number" id="countFunds" data-count="0">Rp0</div><div class="stat-label">Total Dana Terkumpul</div><div class="live-note"><i class="fa-solid fa-rotate"></i> Data program</div></div>
+ <div class="stat-card"><div class="stat-icon"><i class="fa-solid fa-hand-holding-heart"></i></div><div class="stat-number" id="countBeneficiaries" data-count="0">0</div><div class="stat-label">Penerima Manfaat</div><div class="live-note"><i class="fa-solid fa-rotate"></i> Data program</div></div>
+</div></section>
+
+<section class="section">
+
+<div class="card">
+
+<h2>Program Pasukan to the Koin</h2>
+
+<p>
+Pasukan to the Koin merupakan gerakan sedekah harian melalui kaleng infak yang dikelola oleh BAZNAS Kabupaten Sragen. Program ini mengajak masyarakat untuk menyisihkan uang receh setiap hari sebagai bentuk kepedulian kepada sesama.
+</p>
+
+<p>
+Meskipun nilainya kecil, apabila dilakukan secara rutin dan bersama-sama, akan menjadi kekuatan besar untuk membantu masyarakat yang membutuhkan melalui berbagai program kemanusiaan, pendidikan, kesehatan, dakwah, serta pemberdayaan ekonomi.
+</p>
+
+<p>
+Setiap rupiah yang Anda titipkan akan dikelola secara amanah, transparan, dan disalurkan kepada para mustahik sesuai syariat.
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Mengapa Harus Bergabung?</h2>
+
+<div class="grid">
+
+<div class="benefit">
+<h3>💚 Sedekah Jadi Kebiasaan</h3>
+Membangun kebiasaan berbagi setiap hari dengan cara yang mudah.
+</div>
+
+<div class="benefit">
+<h3>📚 Membantu Pendidikan</h3>
+Mendukung beasiswa serta kebutuhan pendidikan anak-anak dhuafa.
+</div>
+
+<div class="benefit">
+<h3>🏥 Membantu Kesehatan</h3>
+Membantu biaya pengobatan dan layanan kesehatan masyarakat kurang mampu.
+</div>
+
+<div class="benefit">
+<h3>🤝 Program Kemanusiaan</h3>
+Membantu korban bencana, keluarga dhuafa, dan masyarakat yang membutuhkan.
+</div>
+
+<div class="benefit">
+<h3>🕌 Mendukung Dakwah</h3>
+Membantu kegiatan dakwah dan syiar Islam di Kabupaten Sragen.
+</div>
+
+<div class="benefit">
+<h3>📈 Pemberdayaan Ekonomi</h3>
+Membantu modal usaha produktif agar mustahik menjadi lebih mandiri.
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="cta">
+
+<h2>Yuk Jadi Bagian dari Pasukan to the Koin!</h2>
+
+<p>
+
+Mulailah sedekah dari recehan hari ini.
+Kecil Nilainya, Besar Manfaatnya.
+
+</p>
+
+<a class="btn btn-wa"
+href="https://wa.me/6285729436744"
+target="_blank">
+
+Gabung Sekarang
+
+</a>
+
+<a class="btn btn-qris" href="#qrisModal" onclick="openQris(event)"><i class="fa-solid fa-qrcode"></i> Scan QRIS</a>
+
+</div>
+
+</section>
+
+<section class="section" id="alur" data-aos="fade-up"><div class="section-heading"><h2>Alur Program</h2><p>Mudah dilakukan, rutin membawa manfaat.</p></div><div class="timeline">
+<div class="timeline-step"><div class="step-icon"><i class="fa-solid fa-user-plus"></i></div><div><span class="step-num">LANGKAH 01</span><h3>Gabung</h3><p>Daftarkan diri sebagai anggota Pasukan to the Koin.</p></div></div>
+<div class="timeline-step"><div class="step-icon"><i class="fa-solid fa-box-open"></i></div><div><span class="step-num">LANGKAH 02</span><h3>Terima Kaleng</h3><p>Petugas membantu proses penyerahan kaleng infak.</p></div></div>
+<div class="timeline-step"><div class="step-icon"><i class="fa-solid fa-coins"></i></div><div><span class="step-num">LANGKAH 03</span><h3>Isi Receh Setiap Hari</h3><p>Sisihkan uang receh sesuai kemampuan secara rutin.</p></div></div>
+<div class="timeline-step"><div class="step-icon"><i class="fa-solid fa-truck-fast"></i></div><div><span class="step-num">LANGKAH 04</span><h3>Dijemput Petugas</h3><p>Petugas mengatur penjemputan kaleng infak.</p></div></div>
+<div class="timeline-step"><div class="step-icon"><i class="fa-solid fa-hands-holding-circle"></i></div><div><span class="step-num">LANGKAH 05</span><h3>Disalurkan kepada Mustahik</h3><p>Infak disalurkan melalui program BAZNAS sesuai ketentuan.</p></div></div>
+</div></section>
+
+<section class="section" data-aos="fade-up"><div class="section-heading"><h2>Galeri Kegiatan</h2><p>Dokumentasi penjemputan kaleng dan penyaluran bantuan. Ganti foto contoh berikut dengan dokumentasi resmi BAZNAS Sragen.</p></div><div class="gallery-grid">
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=900&q=80" alt="Relawan kegiatan sosial" loading="lazy"><div class="gallery-caption"><i class="fa-solid fa-people-group"></i> Gerakan berbagi bersama</div></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=900&q=80" alt="Relawan mengemas bantuan" loading="lazy"><div class="gallery-caption"><i class="fa-solid fa-box-open"></i> Persiapan penyaluran</div></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80" alt="Kegiatan bantuan masyarakat" loading="lazy"><div class="gallery-caption"><i class="fa-solid fa-heart"></i> Kepedulian untuk sesama</div></div>
+</div></section>
+
+<section class="section" data-aos="fade-up"><div class="section-heading"><h2>Cerita Kebaikan</h2><p>Ruang untuk berbagi pengalaman dari anggota dan penerima manfaat.</p></div><div class="testimonial-grid">
+<div class="testimonial"><div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div><p>“Dengan kaleng infak, saya jadi lebih mudah membiasakan diri berbagi setiap hari. Sedikit demi sedikit terasa lebih ringan.”</p><div class="person"><div class="avatar"><i class="fa-solid fa-user"></i></div><div><b>Anggota Pasukan to the Koin</b><small>Testimoni contoh — ganti dengan kutipan terverifikasi</small></div></div></div>
+<div class="testimonial"><div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div><p>“Bantuan yang diberikan sangat berarti bagi keluarga kami. Terima kasih kepada para donatur dan petugas yang telah peduli.”</p><div class="person"><div class="avatar"><i class="fa-solid fa-hands-holding-circle"></i></div><div><b>Penerima Manfaat</b><small>Testimoni contoh — ganti dengan kutipan terverifikasi</small></div></div></div>
+</div></section>
+
+<section class="section">
+
+<div class="card">
+
+<h2>Transfer Donasi</h2>
+
+<p>Pilih rekening berikut kemudian klik tombol <b>Copy</b>.</p>
+
+<div class="bank">
+
+<div class="bank-info">
+
+<b>Bank Mandiri (INFAQ)</b><br>
+
+1380023338606<br>
+
+a.n. BAZ KAB SRAGEN
+
+</div>
+
+<button class="copyBtn" onclick="copyText('1380023338606')">
+
+Copy
+
+</button>
+
+</div>
+
+<div class="bank">
+
+<div class="bank-info">
+
+<b>Bank Jateng Syariah (INFAQ)</b><br>
+
+6041000059<br>
+
+a.n. BAZ KAB SRAGEN
+
+</div>
+
+<button class="copyBtn" onclick="copyText('6041000059')">
+
+Copy
+
+</button>
+
+</div>
+
+<div class="bank">
+
+<div class="bank-info">
+
+<b>Bank BSI (INFAQ)</b><br>
+
+3884420510<br>
+
+a.n. BAZ KAB SRAGEN
+
+</div>
+
+<button class="copyBtn" onclick="copyText('3884420510')">
+
+Copy
+
+</button>
+
+</div>
+
+<div class="bank">
+
+<div class="bank-info">
+
+<b>Bank BSN (INFAQ)</b><br>
+
+7793000576<br>
+
+a.n. BAZ KAB SRAGEN
+
+</div>
+
+<button class="copyBtn" onclick="copyText('7793000576')">
+
+Copy
+
+</button>
+
+</div>
+
+<div class="bank">
+
+<div class="bank-info">
+
+<b>Bank BRI (INFAQ)</b><br>
+
+014001000553300<br>
+
+a.n. BAZ KAB SRAGEN
+
+</div>
+
+<button class="copyBtn" onclick="copyText('014001000553300')">
+
+Copy
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="card">
+
+<h2>Customer Service</h2>
+
+<p>
+Butuh informasi lebih lanjut mengenai Program Pasukan to the Koin?
+</p>
+
+<a class="btn btn-wa"
+href="https://wa.me/6285729436744">
+
+Chat Customer Service
+
+</a>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="card">
+
+<h2>Pertanyaan Umum</h2>
+
+<div class="faq">
+
+<h3>Apakah nominal sedekah harus besar?</h3>
+
+<p>Tidak. Program ini mengajak masyarakat untuk mulai bersedekah dari nominal kecil secara rutin.</p>
+
+</div>
+
+<div class="faq">
+
+<h3>Apakah dana aman?</h3>
+
+<p>Ya. Dana dikelola oleh BAZNAS Kabupaten Sragen secara amanah, profesional, dan transparan.</p>
+
+</div>
+
+<div class="faq">
+
+<h3>Bagaimana jika ingin menjadi Mitra Pasukan to the Koin?</h3>
+
+<p>Silakan menghubungi Customer Service melalui WhatsApp untuk proses pendaftaran dan pengiriman Kaleng Infak.</p>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<a class="wa-float" href="https://wa.me/6285729436744" target="_blank" rel="noopener" aria-label="Hubungi Pasukan to the Koin melalui WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<div class="modal" id="qrisModal" role="dialog" aria-modal="true" aria-labelledby="qrisTitle" onclick="if(event.target===this)closeQris()"><div class="modal-panel"><button class="modal-close" onclick="closeQris()" aria-label="Tutup popup">&times;</button><h2 id="qrisTitle"><i class="fa-solid fa-qrcode"></i> Scan QRIS</h2><p>Scan kode berikut menggunakan aplikasi pembayaran Anda.</p><img class="qris-image" id="qrisImage" src="https://azmiapp.github.io/gabung/qrisinfaq.png" alt="QRIS donasi BAZNAS Kabupaten Sragen" onerror="this.style.display='none';document.getElementById('qrisError').style.display='block'"><p class="modal-help">Pastikan nama penerima dan nominal sudah sesuai sebelum menyelesaikan pembayaran.</p></div></div>
+<footer>
+
+© 2026 BAZNAS Kabupaten Sragen<br>
+
+Pasukan to the Koin • Kecil Nilainya, Besar Manfaatnya
+
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+// KONFIGURASI: ganti dengan URL gambar QRIS GitHub yang benar (raw URL).
+const QRIS_IMAGE_URL = 'https://github.com/USERNAME/REPOSITORY/raw/BRANCH/qris.png';
+// Agar counter benar-benar realtime, sediakan endpoint JSON yang mengembalikan:
+// { "members": 123, "funds": 1234567, "beneficiaries": 45 }
+// Isi URL di bawah dengan endpoint API resmi. Jika kosong, counter tetap 0 (bukan angka rekaan).
+const COUNTER_API_URL = '';
+let currentSlide = 0;
+const slides = Array.from(document.querySelectorAll('.hero-slide'));
+const dots = Array.from(document.querySelectorAll('.slider-dot'));
+function goSlide(index){currentSlide=(index+slides.length)%slides.length;slides.forEach((s,i)=>s.classList.toggle('active',i===currentSlide));dots.forEach((d,i)=>d.classList.toggle('active',i===currentSlide));}
+function changeSlide(step){goSlide(currentSlide+step)}
+setInterval(()=>changeSlide(1),6000);
+function openQris(event){if(event)event.preventDefault();const modal=document.getElementById('qrisModal');const img=document.getElementById('qrisImage');const err=document.getElementById('qrisError');img.src=QRIS_IMAGE_URL;img.style.display='block';err.style.display='none';modal.classList.add('open');document.body.style.overflow='hidden';}
+function closeQris(){document.getElementById('qrisModal').classList.remove('open');document.body.style.overflow='';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeQris()});
+async function loadCounters(){if(!COUNTER_API_URL)return;try{const response=await fetch(COUNTER_API_URL,{cache:'no-store'});if(!response.ok)throw new Error('API tidak tersedia');const data=await response.json();if(Number.isFinite(Number(data.members)))document.getElementById('countMembers').textContent=Number(data.members).toLocaleString('id-ID');if(Number.isFinite(Number(data.funds)))document.getElementById('countFunds').textContent=new Intl.NumberFormat('id-ID',{style:'currency',currency:'IDR',maximumFractionDigits:0}).format(Number(data.funds));if(Number.isFinite(Number(data.beneficiaries)))document.getElementById('countBeneficiaries').textContent=Number(data.beneficiaries).toLocaleString('id-ID');}catch(error){console.warn('Counter belum bisa diperbarui:',error.message)}}
+function copyText(text){if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(()=>alert('Nomor rekening berhasil disalin!')).catch(()=>fallbackCopy(text));}else fallbackCopy(text)}
+function fallbackCopy(text){const input=document.createElement('textarea');input.value=text;document.body.appendChild(input);input.select();try{document.execCommand('copy');alert('Nomor rekening berhasil disalin!')}catch(e){alert('Salin nomor rekening ini: '+text)}input.remove()}
+loadCounters();if(COUNTER_API_URL)setInterval(loadCounters,60000);
+if(window.AOS)AOS.init({duration:700,once:true,offset:70});
+</script>
+
+</body>
+</html>
